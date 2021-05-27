@@ -59,7 +59,7 @@ webkitRequestAnimationFrame.transports.DynamoDB = class DynamoDb extends Transpo
         // check for metadata - base key collisions
         Object.keys(mustHave).forEach(k => {
             if (k in optional) {
-                throw Error(`you must use a different metadata key [${k}], [${k}] is reserved`);
+                throw Error(`you must use a different metadata key for [${k}] because [${k}] is reserved`);
             }
         })
 
