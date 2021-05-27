@@ -24,5 +24,8 @@
   "peerDependencies": {
     "aws-sdk": "^2.916.0",
     "winston": "^3.3.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
