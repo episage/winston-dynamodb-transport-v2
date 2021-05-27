@@ -3,12 +3,20 @@
 A DynamoDB transport for [winston][0].
 
 ## Usage
+
 ```javascript
-  var winston = require('winston');
-  
-  require('winston-dynamodb-transport-v2').DynamoDB;
-  
-  winston.add(winston.transports.DynamoDB, options);
+var winston = require("winston");
+
+var DynamoDbTransport = require("winston-dynamodb-transport-v2");
+
+winston.add(
+  new DynamoDbTransport({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    region: process.env.AWS_REGION,
+    tableName: 'logs',
+  })
+);
 ```
 
 ## Options
@@ -37,7 +45,7 @@ The table should have
 
 ## Installation
 
-``` bash
+```bash
   $ npm install winston
   $ npm install winston-dynamodb-transport-v2
 ```
