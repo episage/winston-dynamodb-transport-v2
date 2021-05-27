@@ -26,6 +26,8 @@
     "winston": "^3.3.3"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "joi": "^17.4.0",
+    "lodash": "^4.17.21",
+    "winston-transport": "^4.4.0"
   }
 }
