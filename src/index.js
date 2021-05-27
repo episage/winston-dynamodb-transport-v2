@@ -7,7 +7,6 @@ var withStack = require('./with-stack');
 
 module.exports = function (__options) {
     Transport.call(this, options);
-    super(__options);
 
     this.name = __options.name || 'DynamoDB';
 
@@ -37,7 +36,7 @@ module.exports = function (__options) {
         throw error;
     }
     this.loggerOptions = loggerOptions;
-    
+
     // init
     var dynamoDb = new AWS.DynamoDB(awsOptions)
     this.documentClient = new AWS.DynamoDB.DocumentClient({
