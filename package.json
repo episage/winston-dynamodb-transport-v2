@@ -1,15 +1,15 @@
 {
-  "name": "winston-dynamodb-2",
+  "name": "winston-dynamodb-transport-v2",
   "description": "A Winston transport for Amazon DynamoDB",
   "version": "1.0.0",
   "author": {
     "name": "Tomasz Ciborski",
     "email": "tom@ciborski.com"
   },
-  "homepage": "https://github.com/inspiredjw/winston-dynamodb-2",
+  "homepage": "https://github.com/inspiredjw/winston-dynamodb-transport-v2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/inspiredjw/winston-dynamodb-2.git"
+    "url": "git://github.com/inspiredjw/winston-dynamodb-transport-v2.git"
   },
   "keywords": [
     "logging",
