@@ -22,8 +22,7 @@
   ],
   "main": "./index.js",
   "peerDependencies": {
-    "aws-sdk": "^2.916.0",
-    "winston": "^3.3.3"
+    "aws-sdk": "^2.916.0"
   },
   "dependencies": {
     "joi": "^17.4.0",
