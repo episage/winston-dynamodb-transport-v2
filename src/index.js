@@ -5,7 +5,7 @@ var TransportStream = require('winston-transport');
 var uuid = require('uuid').v4;
 var withStack = require('./with-stack');
 
-webkitRequestAnimationFrame.transports.DynamoDB = class DynamoDb extends TransportStream {
+module.exports = class DynamoDb extends TransportStream {
 
     constructor(__options) {
         super(__options);
